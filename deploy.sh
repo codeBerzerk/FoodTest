@@ -28,4 +28,4 @@ git push -f origin gh-pages
 
 echo "Deployed succesfully"
 
-git checkout main
+git checkout master
