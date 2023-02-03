@@ -1,9 +1,21 @@
-import Autocomplete from "@mui/joy/Autocomplete";
 import * as React from 'react';
+
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
-const list = [{label:"milk"},{label:"onion"},{label:"carrot"},{label:"apple"},{label:"banana"},{label:"rice"},{label:"salt"}]
+import Switch from '@mui/material/Switch';
+import Autocomplete from '@mui/joy/Autocomplete';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
+
+const list = [
+            {label:"milk",group:"diary"},
+            {label:"onion",group:"vegetables"},
+            {label:"carrot",group:"vegetables"},
+            {label:"apple",group:"fruit"},
+            {label:"banana",group:"fruit"},
+            {label:"rice",group:"groat"},
+            {label:"salt",group:"seasoning"}]
 
 export default function Cart() {
     const dsipatch = useDispatch();
@@ -21,29 +33,30 @@ export default function Cart() {
 
     return(
     <>
-    <ul>
+    <Stack direction="row" spacing={1}>
         {cart.map((product,index)=>{
-            return <li key={index} onClick={()=>{
-                removeProduct(product);
-            }}>{product}</li>
-        })}  
-    </ul>
-        <Autocomplete options={coincide} sx={{width:300}} placeholder="Select product" 
-            onInput={(event)=>{
-                updateValue(event.target.value)
-                updateCoincide([...list.filter(product=>{
-                return {label:product.label.includes(event.target.value)}
-            })])
-            }}
-            inputValue={inputValue}
+            return <Chip key={index} variant="outlined" label={product} onDelete={()=>removeProduct(product)}/>
+            })}  
+    </Stack>
+        <Autocomplete
+            options={coincide}
+            sx={{width:300}}
+            placeholder="Select product" 
+            freeSolo
+            onInput={(event)=>updateValue(event.target.value)}
+
             onChange={(event,newValue)=>{
                 if(newValue !== null && newValue){
-                    updateValue("");
-                    !cart.includes(newValue.label)?
-                    addProduct(newValue.label):
-                    alert("You alredy have this product");
+                    if(!cart.includes(newValue.label)){
+                        addProduct(newValue.label);
+                        updateValue('');
+                    }else{
+                        alert("You alredy have this product");
+                    }
                 }
             }}
             />
+    <Switch label="label" onChange={()=>{}}/>
+
     </>)
 }
