@@ -7,25 +7,41 @@ import Switch from '@mui/material/Switch';
 import Autocomplete from '@mui/joy/Autocomplete';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
 const list = [
-            {label:"milk",group:"diary"},
-            {label:"onion",group:"vegetables"},
-            {label:"carrot",group:"vegetables"},
-            {label:"apple",group:"fruit"},
-            {label:"banana",group:"fruit"},
-            {label:"rice",group:"groat"},
-            {label:"salt",group:"seasoning"}]
+            {label:"milk",category:"diary"},
+            {label:"onion",category:"vegetables"},
+            {label:"carrot",category:"vegetables"},
+            {label:"apple",category:"fruit"},
+            {label:"banana",category:"fruit"},
+            {label:"rice",category:"groat"},
+            {label:"salt",category:"seasoning"}]
+
+const getCategories = (list) => {
+    const categories = [];
+    list.forEach(product => {
+        if(!categories.includes(product.category))categories.push(product.category);
+    });
+    return categories;
+}
+
+const getProductsByCategory = (list,category) => {
+    const products = [];
+    list.forEach(product=>{
+        product.category === category && products.push(product);
+    })
+    return products;
+}
 
 export default function Cart() {
     const dsipatch = useDispatch();
     const cart = useSelector(state=>state.cart.products);
     const [inputValue,updateValue] = useState('');
-    const [coincide,updateCoincide] = useState([...list])
-
     const addProduct = (product) => {
         dsipatch({type:"ADD_PRODUCT",payload:product})
     }
+    const [isCategoryVisible,setCategoryState] = useState(false);
     
     const removeProduct = (product) => {
         dsipatch({type:"REMOVE_PRODUCT",payload:product})
@@ -33,22 +49,24 @@ export default function Cart() {
 
     return(
     <>
-    <Stack direction="row" spacing={1}>
+    <Stack direction="row" spacing={1} style={{display:!isCategoryVisible?"block":"none"}}>
         {cart.map((product,index)=>{
-            return <Chip key={index} variant="outlined" label={product} onDelete={()=>removeProduct(product)}/>
+            return <Chip key={index} variant="outlined" label={product.label} onDelete={()=>removeProduct(product)}/>
             })}  
     </Stack>
         <Autocomplete
-            options={coincide}
+            options={list}
             sx={{width:300}}
             placeholder="Select product" 
             freeSolo
             onInput={(event)=>updateValue(event.target.value)}
-
+            inputValue={inputValue}
             onChange={(event,newValue)=>{
-                if(newValue !== null && newValue){
-                    if(!cart.includes(newValue.label)){
-                        addProduct(newValue.label);
+                
+                if(newValue !== null && newValue.label){
+                    const {category} = newValue,{label} = newValue;
+                    if(!cart.includes(label)){
+                        addProduct({label:label,category:category});
                         updateValue('');
                     }else{
                         alert("You alredy have this product");
@@ -56,7 +74,17 @@ export default function Cart() {
                 }
             }}
             />
-    <Switch label="label" onChange={()=>{}}/>
-
+        <Switch label="label" onChange={()=>{setCategoryState(!isCategoryVisible)}}/>
+        {getCategories(cart).map((category,ind)=>{
+            return <section key={ind} style={{display:isCategoryVisible?"block":"none"}}>
+                <Typography variant='h3'>{[category[0].toUpperCase(),...category]}</Typography>
+                <Stack sx={{width:300}}  direction="row">
+                    {getProductsByCategory(cart,category).map((product,index)=>{
+                        return <Chip key={index} variant="outlined" label={product.label} onDelete={()=>removeProduct(product)}/>
+                        })}
+                </Stack>
+            </section>
+            
+        })}
     </>)
 }
