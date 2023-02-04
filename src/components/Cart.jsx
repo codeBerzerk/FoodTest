@@ -76,8 +76,9 @@ export default function Cart() {
             />
         <Switch label="label" onChange={()=>{setCategoryState(!isCategoryVisible)}}/>
         {getCategories(cart).map((category,ind)=>{
+            category[0].toUpperCase();
             return <section key={ind} style={{display:isCategoryVisible?"block":"none"}}>
-                <Typography variant='h3'>{[category[0].toUpperCase(),...category]}</Typography>
+                <Typography variant='h3'>{category}</Typography>
                 <Stack sx={{width:300}}  direction="row">
                     {getProductsByCategory(cart,category).map((product,index)=>{
                         return <Chip key={index} variant="outlined" label={product.label} onDelete={()=>removeProduct(product)}/>
