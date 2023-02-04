@@ -1,0 +1,15 @@
+.cart{
+    &__input{
+        font-family: "Roboto",sans-serif;
+    }
+}
+ul.MuiAutocomplete-listbox{
+    font-family: "Roboto",sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+.MuiAutocomplete-clearIndicator{
+    display: none !important;
+}
+.MuiChip-outlined{
+    margin: 3px !important;
+}

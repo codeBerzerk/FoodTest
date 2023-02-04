@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { combinedReducer } from "./reducers/combinedReducer";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import { Provider } from "react-redux";
 
 const store = configureStore({reducer:combinedReducer})
