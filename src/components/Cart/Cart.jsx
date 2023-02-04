@@ -28,7 +28,7 @@ export default function Cart() {
         dsipatch({type:"CHANGE_SORT",payload:state})
     }
 
-    return(<> 
+    return(<section className="cart"> 
             <CartAutocomplete addProduct={addProduct} cart={cart}/>
 
             <Stack direction="row">
@@ -37,5 +37,5 @@ export default function Cart() {
             </Stack>
 
             <SortCart cart={cart} removeProduct={removeProduct} isCategoryVisible={isCategoryVisible}/>
-        </>)
+        </section>)
 }
