@@ -1,21 +1,55 @@
 .dish{
     background: linear-gradient(120.12deg, rgba(255, 247, 236, 0.75) -0.11%, rgba(255, 247, 236, 0) 99.44%);
-    width: 70%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     &__meal{
-        height: 400px;
+        height: 330px;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
         &--img{
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             background-size: contain;
             border-radius: 50%;
             background-position: center;
+        }
+        &--description{
+            position: absolute;
+            width: 270px;
+            padding: 10px;
+            border-radius: 10px;
+            bottom: 0;
+            background-color: #FFE4BC;
+            font-family: "Roboto",sans-serif;
+        }
+        &--products{
+            & div{
+                position: relative;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                &::before{
+                    margin-left: -8px;
+                    content: '';
+                    position: absolute;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background-color: black;
+                }
+            }
+        }
+        &--title{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            padding-bottom:5px;
         }
     }
 }
