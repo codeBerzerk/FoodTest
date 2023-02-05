@@ -14,7 +14,7 @@ export default function CartAutocomplete({cart,addProduct}){
     inputValue={inputValue}
     onChange={(event,newValue)=>{
         if(newValue !== null && newValue.label){
-            if(!cart.products.find(product=>product.label === newValue.label)){
+            if(!cart.products?.find(product=>product.label === newValue.label)){
                 addProduct(newValue);
                 updateValue('');
             }else{

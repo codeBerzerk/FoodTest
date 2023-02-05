@@ -2,6 +2,7 @@ import Dish from "./Dish";
 
 
 import { useEffect, useState } from "react"
+import DishModal from "./DishModal";
 
 export default function DishesList() {
     const [mealDB,updateDB] = useState([]);
@@ -23,6 +24,7 @@ export default function DishesList() {
         return "loading..."
     }
     return(<section className="dish">
+        <DishModal/>
         {mealDB.map(meal=>{
             return <Dish key={meal.idMeal} dish={meal}/>
         })}
