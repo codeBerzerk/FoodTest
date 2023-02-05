@@ -29,12 +29,16 @@
             line-height: 20px;
             color: #3F2B0C;
             width: 300px;
-            height: 200px;
+            height: 150px;
             background: #FFEDD1;
             box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
             border-radius: 33.5px;
         }
         &--title {
+            width: 250px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             cursor: pointer;
             font-style: normal;
             font-weight: 500;
