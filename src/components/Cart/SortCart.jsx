@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 export default function SortCart({cart,isCategoryVisible,removeProduct}){
     return (
-        <Stack direction="row" sx={{width:300,flexWrap:"wrap"}}>
+        <Stack direction="column" sx={{flexWrap:"wrap"}}>
              {!isCategoryVisible ? 
                      cart.products?.map((product,index)=>{
                          return <Chip 
@@ -18,7 +18,7 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
                      cartHandlers[0](cart.products).map((category,ind)=>{ 
                          return <section key={ind}> 
                                      <Typography variant='h5'>{category}</Typography> 
-                                     <Stack sx={{width:300}}  direction="row"> 
+                                     <Stack sx={{flexWrap:"wrap"}} direction="row"> 
                                      {cartHandlers[1](cart.products,category).map((product,index)=>{ 
                                              return <Chip 
                                                          key={index} 
