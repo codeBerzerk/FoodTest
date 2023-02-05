@@ -8,6 +8,8 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import CartAutocomplete from './CartAutocomplete';
 import SortCart from './SortCart';
+import {Button} from "@mui/material";
+import PlusIcon from "../svg's/plus";
 
 
 
@@ -82,6 +84,24 @@ export default function Cart() {
         >
             <CartAutocomplete addProduct={addProduct} cart={cart}/>
             <SortCart cart={cart} removeProduct={removeProduct} isCategoryVisible={isCategoryVisible}/>
+            <Button
+                className='cart__button'
+                sx={{
+                    width: '90%',
+                    height: '66px',
+                    background: '#FFF1DC',
+                    boxShadow: '0 11px 15px rgba(235, 169, 70, 0.64)',
+                    borderRadius: '33.5px',
+                    fontStyle: 'normal',
+                    textDecoration: 'underline',
+                    fontWeight: 500,
+                    fontSize: '24px',
+                    lineHeight: '29px',
+                    color: 'rgba(171, 39, 63, 0.7)',
+                }}
+                endIcon={<PlusIcon/>}>
+                Додати продукти
+            </Button>
         </Stack>
 
         </section>)

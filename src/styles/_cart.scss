@@ -28,7 +28,6 @@
 
 .cart__switch {
     margin-left: 80px;
-
 }
 
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
@@ -48,6 +47,10 @@
     box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
     border-radius: 33.5px;
     transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.cart__button {
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 ul.MuiAutocomplete-listbox{
