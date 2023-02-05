@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7489d606-24d3-41cd-b64d-bf35e8ae041e" name="Changes" comment="">
+    <list default="true" id="7489d606-24d3-41cd-b64d-bf35e8ae041e" name="Changes" comment="started make layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/CartHandlers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/CartHandlers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cart/SortCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/SortCart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DishList/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/Dish.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_cart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_dish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_dish.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +130,8 @@
       <workItem from="1675532243493" duration="2492000" />
       <workItem from="1675534982848" duration="12000" />
       <workItem from="1675541225424" duration="7007000" />
+      <workItem from="1675588811100" duration="289000" />
+      <workItem from="1675592616533" duration="2916000" />
     </task>
     <task id="LOCAL-00001" summary="gg">
       <created>1675456319475</created>
@@ -154,15 +154,34 @@
       <option name="project" value="LOCAL" />
       <updated>1675533978474</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="started make layout">
+      <created>1675588951904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675588951904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gg" />
     <MESSAGE value="test-new-branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="test-new-branch" />
+    <MESSAGE value="started make layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="started make layout" />
   </component>
 </project>

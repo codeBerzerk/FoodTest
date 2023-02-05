@@ -8,7 +8,7 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
     return (
         <Stack direction="row" sx={{width:300,flexWrap:"wrap"}}>
              {!isCategoryVisible ? 
-                     cart.products.map((product,index)=>{ 
+                     cart.products?.map((product,index)=>{
                          return <Chip 
                                      key={index} 
                                      variant="outlined" 
