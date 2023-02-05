@@ -34,6 +34,7 @@ export default function Cart() {
             <Typography
                 className="cart__welcome"
                 sx={{
+                    userSelect:'none',
                     fontStyle: 'normal',
                     fontWeight: 400,
                     fontSize: '64px',

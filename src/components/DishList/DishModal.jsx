@@ -19,9 +19,7 @@ const style = {
 export default function DishModal(){
     const dispatch = useDispatch();
     const dish = useSelector(state=>state.dish);
-
-    const ingridients = dishHandler.getIngridients(dish.meal); 
-
+    const ingridients = Array.from(new Set(dishHandler.getIngridients(dish.meal))); 
     const openMopdal = (state) => {
         dispatch({type:"CHANGE_OPEN",payload:state})
     }
@@ -33,10 +31,10 @@ export default function DishModal(){
                     <Typography variant='h4'>{dish.meal.strMeal}</Typography>
                     <Stack direction="row" spacing={1} sx={{maxWidth:"80%",flexWrap:"wrap"}}>
                         {ingridients.map(ingr=>{
-                            return <Chip label={ingr} variant='outlined'/>
+                            return <Chip key={ingr} label={ingr} variant='outlined'/>
                         })}
                     </Stack>
-                    <Typography variant='subtitle1'>{dish.meal.strInstructions}</Typography>
+                    <Typography variant='subtitle1' sx={{maxHeight:"450px",overflowY:"scroll"}}>{dish.meal.strInstructions}</Typography>
                 </Box>
             </Modal>)
 }
