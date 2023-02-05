@@ -83,6 +83,9 @@ export default function Cart() {
         </Stack>
         <Stack
         sx={{
+            alignItems: 'center',
+            position: 'sticky',
+            top: '10px',
             paddingBottom: '26px',
             width: '99%',
             background: 'rgba(255, 237, 209, 0.77)',
@@ -94,7 +97,7 @@ export default function Cart() {
                 className='cart__button'
                 sx={{
                     marginTop: '60px',
-                    width: '90%',
+                    width: '80%',
                     height: '66px',
                     background: '#FFF1DC',
                     boxShadow: '0 11px 15px rgba(235, 169, 70, 0.64)',
@@ -102,7 +105,7 @@ export default function Cart() {
                     fontStyle: 'normal',
                     textDecoration: 'underline',
                     fontWeight: 500,
-                    fontSize: '24px',
+                    fontSize: '1.5625vw',
                     lineHeight: '29px',
                     color: 'rgba(171, 39, 63, 0.7)',
                 }}

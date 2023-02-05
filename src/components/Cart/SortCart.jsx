@@ -8,10 +8,9 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
     return (
         <Stack
                sx={{
-                   // flexWrap:"wrap",
+                   flexWrap:"wrap",
                    display: 'flex',
-                   overflowX: 'scroll',
-        }}>
+                    }}>
              {!isCategoryVisible ? 
                      cart.products?.map((product,index)=>{
                          return <Chip
@@ -49,7 +48,6 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
                                                              boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
                                                              borderRadius: '20px',
                                                              margin: '4px',
-
                                                          }}
                                                          key={index}
                                                          label={product.label} 

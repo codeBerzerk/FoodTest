@@ -18,12 +18,12 @@ export default function Dish({dish}) {
         <div className="dish__meal">
             <div className="dish__meal--img" style={{backgroundImage:`url(${dish.strMealThumb})`}}/>
             <div className="dish__meal--description">
-                <Typography variant="h5" onClick={()=>{addDish(dish);openModal(true)}}>{dish.strMeal}</Typography>
-                <div className="dish__meal--products">
+                <Typography className="dish__meal--title" variant="h5" onClick={()=>{addDish(dish);openModal(true)}}>{dish.strMeal}</Typography>
+                <ul className="dish__meal--products" style={{listStyleType: 'disc', width: 'max-content', marginTop: 'auto', marginBottom: 'auto'}}>
                     {shortCut.map(ingr=>{
-                        return <div key={ingr}>{ingr}</div>
+                        return <li key={ingr}>{ingr}</li>
                     })}
-                </div>
+                </ul>
             </div>
 
         </div>)

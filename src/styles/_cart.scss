@@ -36,8 +36,14 @@
 
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
     background: #FFF1DC!important;
-
+    box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
+    border-radius: 30%;
 }
+
+.css-1dbv9iw-MuiStack-root {
+    margin: 26px;
+}
+
 .cart__switch::-webkit-slider-runnable-track {
     width: 51px;
     height: 24px;

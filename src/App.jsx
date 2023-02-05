@@ -9,7 +9,7 @@ const store = configureStore({reducer:combinedReducer})
 export default function App(){
     return(
         <Provider store={store}>
-            <Cart />
+            <Cart/>
             <DishesList/>
         </Provider>
     )

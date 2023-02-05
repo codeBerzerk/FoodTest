@@ -6,32 +6,58 @@ import { dishHandler } from './DishHandlers';
 import ModalChip from './ModalChip';
 
 const style = {
+    background: 'linear-gradient(180deg, #E28C09 0%, rgba(226, 140, 9, 0.7) 100%)',
+    backdropFilter: 'blur(12.5px)',
+    borderRadius: '38px',
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 800,
-    bgcolor: '#ffffff',
-    border: '2px solid #000',
-    boxShadow: 24,
     p: 4,
+
+
+    // Scrollbar
+    "&::-webkit-scrollbar": {
+        width: "10px",
+    },
+
+    /* Track */
+    "&::-webkit-scrollbar-track": {
+        background: "#8C8C8C",
+        width: "2px",
+        border: "3px solid white",
+        borderRadius: "10px",
+    },
+
+    /* Handle */
+    "&::-webkit-scrollbar-thumb": {
+        background: "#373F41",
+        height: "100px",
+        borderRadius: "10px",
+    },
+
+    /* Handle on hover */
+    "&::-webkit-scrollbar-thumb:hover": {
+        background: "black",
+    },
   };
 
 export default function DishModal(){
     const dispatch = useDispatch();
     const dish = useSelector(state=>state.dish);
-    const ingridients = Array.from(new Set(dishHandler.getIngridients(dish.meal))); 
-    const openMopdal = (state) => {
+    const ingredients = Array.from(new Set(dishHandler.getIngridients(dish.meal)));
+    const openModal = (state) => {
         dispatch({type:"CHANGE_OPEN",payload:state})
     }
 
     return (<Modal
                 open={dish.isOpen}
-                onClose={()=>openMopdal(false)}>
+                onClose={()=>openModal(false)}>
                 <Box sx={style}>
                     <Typography variant='h4'>{dish.meal.strMeal}</Typography>
                     <Stack direction="row" spacing={1} sx={{maxWidth:"80%",flexWrap:"wrap"}}>
-                        {ingridients.map(ingr=>{
+                        {ingredients.map(ingr=>{
                             return <ModalChip key={ingr} ingr={ingr}/>
                         })}
                     </Stack>
