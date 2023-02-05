@@ -8,7 +8,6 @@ export default function CartAutocomplete({cart,addProduct}){
     return <Autocomplete
     className="cart__input"
     options={productDB}
-    sx={{width:300}}
     placeholder="Select product" 
     onInput={(event)=>updateValue(event.target.value)}
     inputValue={inputValue}

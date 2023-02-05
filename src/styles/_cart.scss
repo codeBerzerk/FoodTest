@@ -55,6 +55,7 @@
 
 ul.MuiAutocomplete-listbox{
     font-family: "Roboto",sans-serif;
+    z-index: 10000;
     background-color: rgb(236, 236, 236);
 }
 .MuiAutocomplete-clearIndicator{
@@ -62,4 +63,7 @@ ul.MuiAutocomplete-listbox{
 }
 .MuiChip-outlined{
     margin: 3px !important;
+}
+.MuiAutocomplete-root{
+    
 }

@@ -1,8 +1,9 @@
-import { Chip, Stack, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import { Box } from '@mui/system';
 import { useDispatch, useSelector } from 'react-redux';
 import { dishHandler } from './DishHandlers';
+import ModalChip from './ModalChip';
 
 const style = {
     position: 'absolute',
@@ -31,7 +32,7 @@ export default function DishModal(){
                     <Typography variant='h4'>{dish.meal.strMeal}</Typography>
                     <Stack direction="row" spacing={1} sx={{maxWidth:"80%",flexWrap:"wrap"}}>
                         {ingridients.map(ingr=>{
-                            return <Chip key={ingr} label={ingr} variant='outlined'/>
+                            return <ModalChip key={ingr} ingr={ingr}/>
                         })}
                     </Stack>
                     <Typography variant='subtitle1' sx={{maxHeight:"450px",overflowY:"scroll"}}>{dish.meal.strInstructions}</Typography>
