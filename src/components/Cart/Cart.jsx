@@ -6,10 +6,10 @@ import { useDispatch, useSelector } from "react-redux"
 import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import CartAutocomplete from './CartAutocomplete';
 import SortCart from './SortCart';
 import {Button} from "@mui/material";
 import PlusIcon from "../svg's/plus";
+import CartModal from './CartModal';
 
 
 
@@ -18,6 +18,7 @@ export default function Cart() {
     const cart = useSelector(state=>state.cart);
     
     const [isCategoryVisible,setCategoryState] = useState(cart.sorted);
+    const [isOpen,updateOpen] = useState(false);
 
     const addProduct = (product) => {
         dispatch({type:"ADD_PRODUCT",payload:product})
@@ -31,6 +32,10 @@ export default function Cart() {
     }
 
     return(<section className="cart">
+            <CartModal 
+                isOpen={isOpen} updateOpen={updateOpen}
+                addProduct={addProduct} cart={cart}
+                removeProduct={removeProduct} isCategoryVisible={isCategoryVisible}/>
             <Typography
                 className="cart__welcome"
                 sx={{
@@ -83,7 +88,6 @@ export default function Cart() {
             borderRadius: '24px',
         }}
         >
-            <CartAutocomplete addProduct={addProduct} cart={cart}/>
             <SortCart cart={cart} removeProduct={removeProduct} isCategoryVisible={isCategoryVisible}/>
             <Button
                 className='cart__button'
@@ -100,6 +104,7 @@ export default function Cart() {
                     lineHeight: '29px',
                     color: 'rgba(171, 39, 63, 0.7)',
                 }}
+                onClick={()=>updateOpen(true)}
                 endIcon={<PlusIcon/>}>
                 Додати продукти
             </Button>

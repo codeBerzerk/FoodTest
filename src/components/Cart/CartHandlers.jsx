@@ -1,3 +1,5 @@
+import { productDB } from "./HandleProductDB";
+
 const getCategories = (list) => {
     const categories = [];
     list?.forEach(product => {
@@ -13,4 +15,14 @@ const getProductsByCategory = (list,category) => {
     })
     return products;
 }
-export const cartHandlers = [getCategories,getProductsByCategory];
+const getProductFromDB = (myProduct) =>{
+    let res;
+    productDB.find(product=>{
+        if(product.label === myProduct){
+            res = product;
+        }
+    });
+    return res;
+}
+
+export const cartHandlers = [getCategories,getProductsByCategory,getProductFromDB];

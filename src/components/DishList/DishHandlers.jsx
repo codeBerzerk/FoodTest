@@ -6,6 +6,6 @@ export const dishHandler = {
                     ingridients.push(dish[value]);
                 }
             }
-            return ingridients;
+            return Array.from(new Set(ingridients));
         }  
 }
