@@ -21,6 +21,7 @@ const getProductFromDB = (myProduct) =>{
         if(product.label === myProduct){
             res = product;
         }
+        return product.label === myProduct;
     });
     return res;
 }
