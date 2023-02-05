@@ -9,7 +9,8 @@ export default function Dish({dish}) {
     }
     const shortCut = ingridients;
     shortCut.length = 3;
-    return(<div className="dish__meal">
+    return(
+        <div className="dish__meal">
             <div className="dish__meal--img" style={{backgroundImage:`url(${dish.strMealThumb})`}}/>
             <div className="dish__meal--description">
                 <Typography variant="h5">{dish.strMeal}</Typography>
