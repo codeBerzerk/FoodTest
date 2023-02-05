@@ -6,12 +6,29 @@ import Typography from '@mui/material/Typography';
 
 export default function SortCart({cart,isCategoryVisible,removeProduct}){
     return (
-        <Stack direction="column" sx={{flexWrap:"wrap"}}>
+        <Stack
+               sx={{
+                   // flexWrap:"wrap",
+                   display: 'flex',
+                   overflowX: 'scroll',
+        }}>
              {!isCategoryVisible ? 
                      cart.products?.map((product,index)=>{
-                         return <Chip 
+                         return <Chip
+                             sx={{
+                                 fontFamily: "'Montserrat', sans-serif",
+                                 fontStyle: 'italic',
+                                 fontWeight: '500',
+                                 fontSize: '16px',
+                                 lineHeight: '20px',
+                                 color: '#3F2B0C',
+                                 background: '#FFF1DC',
+                                 boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+                                 borderRadius: '20px',
+                                 margin: '4px',
+                             }}
                                      key={index} 
-                                     variant="outlined" 
+
                                      label={product.label} 
                                      onDelete={()=>removeProduct(product)}/> 
                                  }): 
@@ -20,9 +37,21 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
                                      <Typography variant='h5'>{category}</Typography> 
                                      <Stack sx={{flexWrap:"wrap"}} direction="row"> 
                                      {cartHandlers[1](cart.products,category).map((product,index)=>{ 
-                                             return <Chip 
-                                                         key={index} 
-                                                         variant="outlined" 
+                                             return <Chip
+                                                         sx={{
+                                                             fontFamily: "'Montserrat', sans-serif",
+                                                             fontStyle: 'italic',
+                                                             fontWeight: '500',
+                                                             fontSize: '16px',
+                                                             lineHeight: '20px',
+                                                             color: '#3F2B0C',
+                                                             background: '#FFF1DC',
+                                                             boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+                                                             borderRadius: '20px',
+                                                             margin: '4px',
+
+                                                         }}
+                                                         key={index}
                                                          label={product.label} 
                                                          onDelete={()=>removeProduct(product)}/> 
                                                      })} 
