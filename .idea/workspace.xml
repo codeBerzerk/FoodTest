@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7489d606-24d3-41cd-b64d-bf35e8ae041e" name="Changes" comment="some small fixes">
-      <change afterPath="$PROJECT_DIR$/src/components/svg's/plus.jsx" afterDir="false" />
+    <list default="true" id="7489d606-24d3-41cd-b64d-bf35e8ae041e" name="Changes" comment="button for add products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/SortCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/SortCart.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,9 @@
       <workItem from="1675534982848" duration="12000" />
       <workItem from="1675541225424" duration="7007000" />
       <workItem from="1675588811100" duration="289000" />
-      <workItem from="1675592616533" duration="5256000" />
+      <workItem from="1675592616533" duration="8998000" />
+      <workItem from="1675604385441" duration="18000" />
+      <workItem from="1675617999444" duration="462000" />
     </task>
     <task id="LOCAL-00001" summary="gg">
       <created>1675456319475</created>
@@ -167,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675595651799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="button for add products">
+      <created>1675598072325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675598072325</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +197,7 @@
     <MESSAGE value="test-new-branch" />
     <MESSAGE value="started make layout" />
     <MESSAGE value="some small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some small fixes" />
+    <MESSAGE value="button for add products" />
+    <option name="LAST_COMMIT_MESSAGE" value="button for add products" />
   </component>
 </project>

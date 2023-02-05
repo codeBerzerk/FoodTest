@@ -83,6 +83,7 @@ export default function Cart() {
         </Stack>
         <Stack
         sx={{
+            paddingBottom: '26px',
             width: '99%',
             background: 'rgba(255, 237, 209, 0.77)',
             borderRadius: '24px',
@@ -92,6 +93,7 @@ export default function Cart() {
             <Button
                 className='cart__button'
                 sx={{
+                    marginTop: '60px',
                     width: '90%',
                     height: '66px',
                     background: '#FFF1DC',
