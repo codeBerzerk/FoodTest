@@ -18,6 +18,7 @@
             background-position: center;
         }
         &--description {
+            cursor: pointer;
             margin-top: -50px;
             display: flex;
             flex-direction: column;
@@ -39,7 +40,6 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            cursor: pointer;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -47,4 +47,39 @@
             margin-bottom: 6px;
         }
     }
+    .modalReceipt {
+        &::-webkit-scrollbar {
+            width: 10px;
+        };
+
+        &::-webkit-scrollbar-track {
+        background: #8C8C8C;
+        width: 2px;
+        border: 3px solid white;
+        border-radius: 10px;
+    };
+
+    ::-webkit-scrollbar-thumb {
+        background: #373F41;
+        height: 100px;
+        border-radius: 10px;
+    };
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: black;
+    };
+    }
+}
+
+.ingredientsChip {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3F2B0C !important;
+    background: #FFF1DC !important;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 20px;
+    margin: 4px !important;
 }

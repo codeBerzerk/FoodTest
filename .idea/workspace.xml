@@ -4,30 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="new styles for dish container">
-      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Meal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cart/CartAutocomplete.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cart/CartHandlers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cart/CartModal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cart/HandleProductDB.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cart/SortCart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DishList/Dish.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DishList/DishHandlers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DishList/DishesList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DishList/ModalChip.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/svg's/plus.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/cartReducer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/combinedReducer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/dishReducer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/_cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/_dish.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/reset.css" afterDir="false" />
+    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="WEBSTORM IS TOP IDE FOR CODING(HE SAVED OUR WORK)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishList/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/Dish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishList/ModalChip.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/ModalChip.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_dish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_dish.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +135,8 @@
       <workItem from="1675592616533" duration="8998000" />
       <workItem from="1675604385441" duration="18000" />
       <workItem from="1675617999444" duration="462000" />
-      <workItem from="1675633269613" duration="436000" />
+      <workItem from="1675633269613" duration="864000" />
+      <workItem from="1675665689781" duration="9297000" />
     </task>
     <task id="LOCAL-00001" summary="gg">
       <created>1675456319475</created>
@@ -225,11 +208,29 @@
       <option name="project" value="LOCAL" />
       <updated>1675633331395</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="WEBSTORM IS TOP IDE FOR CODING(HE SAVED OUR WORK)">
+      <created>1675633791213</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675633791213</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -262,6 +263,7 @@
     <MESSAGE value="button for add products" />
     <MESSAGE value="new gitignore" />
     <MESSAGE value="new styles for dish container" />
-    <option name="LAST_COMMIT_MESSAGE" value="new styles for dish container" />
+    <MESSAGE value="WEBSTORM IS TOP IDE FOR CODING(HE SAVED OUR WORK)" />
+    <option name="LAST_COMMIT_MESSAGE" value="WEBSTORM IS TOP IDE FOR CODING(HE SAVED OUR WORK)" />
   </component>
 </project>
