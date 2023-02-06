@@ -1,5 +1,6 @@
 import Dish from "./Dish";
-
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 import { useEffect, useState } from "react"
 import DishModal from "./DishModal";
@@ -27,7 +28,12 @@ export default function DishesList() {
     },[mealCount]);
 
     if(!mealDB.length){
-        return "loading..."
+        return <Backdrop
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={!mealDB.length}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
     }
     return(<section style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",width:"70%"}}>
         <DishSearch/>
