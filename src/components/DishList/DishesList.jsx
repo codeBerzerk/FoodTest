@@ -13,8 +13,8 @@ export default function DishesList() {
         if(mealDB.length!==0){
            arr = mealDB; 
         }
-            (async ()=>{    
-                while(arr.length < mealCount){
+        (async ()=>{    
+            while(arr.length < mealCount){
                 const {meals} = await (await fetch("https://www.themealdb.com/api/json/v1/1/random.php")).json();
                     if(meals){
                         if(!arr.find(meal=>meal.idMeal === meals[0].idMeal)){
@@ -22,9 +22,10 @@ export default function DishesList() {
                         }
                     }
                 }
-                updateDB(arr);
+                updateDB([...arr]);
             })()
-    },[mealCount])
+    },[mealCount]);
+
     if(!mealDB.length){
         return "loading..."
     }
@@ -36,7 +37,7 @@ export default function DishesList() {
                 return <Dish key={meal.idMeal} dish={meal}/>
             })}
             <button onClick={()=>{
-                updateCount(mealCount+9);
+                updateCount((prevState)=>prevState+9);
             }}>Load more</button>
         </section>
     </section>)
