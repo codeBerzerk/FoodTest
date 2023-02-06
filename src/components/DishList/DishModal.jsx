@@ -20,6 +20,7 @@ const style = {
 
 const receiptStyles = {
     height:"auto",
+    maxHeight: "50vh",
     marginTop: "26px",
     padding: "60px",
     overflowY:"scroll",
