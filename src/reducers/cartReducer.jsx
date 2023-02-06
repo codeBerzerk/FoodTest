@@ -17,7 +17,7 @@ export const cart = (state = JSON.parse(localStorage.getItem("cart")),action) =>
             return updateStorage({...state,products:[...state.products,action.payload]})
           }
           case "REMOVE_PRODUCT":{
-            return updateStorage({...state,products:state.products.filter(product => product !== action.payload)})
+            return updateStorage({...state,products:state.products.filter(product => product.label !== action.payload.label)})
           }
           case "CHANGE_SORT":{
             return updateStorage({...state,sorted:action.payload})

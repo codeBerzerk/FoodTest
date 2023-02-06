@@ -16,9 +16,9 @@ const getProductsByCategory = (list,category) => {
     return products;
 }
 const getProductFromDB = (myProduct) =>{
-    let res;
+    let res = {label:myProduct,category:"Unclassified products"};
     productDB.find(product=>{
-        if(product.label === myProduct){
+        if(product.label === myProduct.split(",")[0]){
             res = product;
         }
         return product.label === myProduct;
