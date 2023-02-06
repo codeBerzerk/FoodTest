@@ -4,7 +4,6 @@ import { dishHandler } from "./DishHandlers";
 
 export default function Dish({dish}) {
     const dispatch = useDispatch();
-
     const addDish = (meal) => {
         dispatch({type:"UPDATE_DISH",payload:meal})
     }

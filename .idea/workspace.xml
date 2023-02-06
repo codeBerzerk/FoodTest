@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="gitignore updated">
+    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="small fix styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishList/Dish.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/Dish.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_dish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_dish.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +136,8 @@
       <workItem from="1675604385441" duration="18000" />
       <workItem from="1675617999444" duration="462000" />
       <workItem from="1675633269613" duration="864000" />
-      <workItem from="1675665689781" duration="10254000" />
+      <workItem from="1675665689781" duration="10801000" />
+      <workItem from="1675677432007" duration="3992000" />
     </task>
     <task id="LOCAL-00001" summary="gg">
       <created>1675456319475</created>
@@ -225,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675675752118</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="small fix styles">
+      <created>1675676964891</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675676964891</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +288,7 @@
     <MESSAGE value="WEBSTORM IS TOP IDE FOR CODING(HE SAVED OUR WORK)" />
     <MESSAGE value="new styles for DishModal" />
     <MESSAGE value="gitignore updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore updated" />
+    <MESSAGE value="small fix styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fix styles" />
   </component>
 </project>
