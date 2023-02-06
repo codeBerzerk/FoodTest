@@ -11,36 +11,27 @@ const style = {
     borderRadius: '38px',
     position: 'absolute',
     top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 800,
+    left: '70%',
+    transform: 'translate(-55%, -50%)',
+    width: '62%',
+    height: 'auto',
     p: 4,
+}
 
-
-    // Scrollbar
-    "&::-webkit-scrollbar": {
-        width: "10px",
-    },
-
-    /* Track */
-    "&::-webkit-scrollbar-track": {
-        background: "#8C8C8C",
-        width: "2px",
-        border: "3px solid white",
-        borderRadius: "10px",
-    },
-
-    /* Handle */
-    "&::-webkit-scrollbar-thumb": {
-        background: "#373F41",
-        height: "100px",
-        borderRadius: "10px",
-    },
-
-    /* Handle on hover */
-    "&::-webkit-scrollbar-thumb:hover": {
-        background: "black",
-    },
+const receiptStyles = {
+    height:"auto",
+    marginTop: "26px",
+    padding: "60px",
+    overflowY:"scroll",
+    background: '#FFEDD1',
+    boxShadow: '0 11px 15px rgba(235, 169, 70, 0.64)',
+    borderRadius: '33.5px',
+    fontFamily: ' "Montserrat", sans-serif ',
+    fontStyle: 'italic',
+    fontWeight: 400,
+    fontSize: '16px',
+    lineHeight: '22px',
+    color: '#000000',
   };
 
 export default function DishModal(){
@@ -56,12 +47,12 @@ export default function DishModal(){
                 onClose={()=>openModal(false)}>
                 <Box sx={style}>
                     <Typography variant='h4'>{dish.meal.strMeal}</Typography>
-                    <Stack direction="row" spacing={1} sx={{maxWidth:"80%",flexWrap:"wrap"}}>
+                    <Stack direction="row" spacing={1} sx={{maxWidth:"100%",flexWrap:"wrap",alignItems:'center',}}>
                         {ingredients.map(ingr=>{
                             return <ModalChip key={ingr} ingr={ingr}/>
                         })}
                     </Stack>
-                    <Typography variant='subtitle1' sx={{maxHeight:"450px",overflowY:"scroll"}}>{dish.meal.strInstructions}</Typography>
+                    <Typography className="modalReceipt" variant='subtitle1' sx={receiptStyles}>{dish.meal.strInstructions}</Typography>
                 </Box>
             </Modal>)
 }

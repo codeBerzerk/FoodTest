@@ -17,39 +17,68 @@
             border-radius: 50%;
             background-position: center;
         }
-        &--description{
-            position: absolute;
-            width: 270px;
-            padding: 10px;
-            border-radius: 10px;
-            bottom: 0;
-            background-color: #FFE4BC;
-            font-family: "Roboto",sans-serif;
-        }
-        &--products{
-            & div{
-                position: relative;
-                line-height: 20px;
-                display: flex;
-                align-items: center;
-                margin-left: 10px;
-                &::before{
-                    margin-left: -8px;
-                    content: '';
-                    position: absolute;
-                    width: 3px;
-                    height: 3px;
-                    border-radius: 50%;
-                    background-color: black;
-                }
-            }
+        &--description {
+            margin-top: -50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #3F2B0C;
+            width: 300px;
+            height: 150px;
+            background: #FFEDD1;
+            box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
+            border-radius: 33.5px;
         }
         &--title{
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            text-align: center;
-            padding-bottom:5px;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 6px;
         }
     }
+    .modalReceipt {
+        &::-webkit-scrollbar {
+            width: 10px;
+        };
+
+        &::-webkit-scrollbar-track {
+        background: #8C8C8C;
+        width: 2px;
+        border: 3px solid white;
+        border-radius: 10px;
+    };
+
+    ::-webkit-scrollbar-thumb {
+        background: #373F41;
+        height: 100px;
+        border-radius: 10px;
+    };
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: black;
+    };
+    }
+}
+
+.ingredientsChip {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3F2B0C !important;
+    background: #FFF1DC !important;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 20px;
+    margin: 4px !important;
 }
