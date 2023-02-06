@@ -30,8 +30,22 @@ export default function DishSearch(){
     return <section>    
         
             <Autocomplete  
-                placeholder="Filter by main ingredient"
+                placeholder="Назва страви"
                 options={dishList}
+                sx={{
+                    border: "none",
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontStyle: "italic",
+                    fontWeight: 500,
+                    fontSize: "16px",
+                    lineHeight: "20px",
+                    color: "rgba(63, 43, 12, 0.7)",
+                    width: "482px",
+                    height: "55px",
+                    background: "#FFEDD1",
+                    boxShadow: "0 11px 15px rgba(235, 169, 70, 0.64)",
+                    borderRadius: "26px"
+                }}
                 inputValue={inputValue}
                 onInput={e=>{
                     updateInput(e.target.value);

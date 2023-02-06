@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="more styleees">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_dish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_dish.scss" afterDir="false" />
-    </list>
+    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="Modal ended" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
