@@ -3,6 +3,7 @@ import Dish from "./Dish";
 
 import { useEffect, useState } from "react"
 import DishModal from "./DishModal";
+import DishSearch from "./Search/DishSearch";
 
 export default function DishesList() {
     const [mealDB,updateDB] = useState([]);
@@ -24,13 +25,16 @@ export default function DishesList() {
     if(!mealDB.length){
         return "loading..."
     }
-    return(<section className="dish">
-        <DishModal/>
-        {mealDB.map(meal=>{
-            return <Dish key={meal.idMeal} dish={meal}/>
-        })}
-        <button onClick={()=>{
-            updateCount(mealCount+9);
-        }}>Load more</button>
-        </section>)
+    return(<section style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",width:"70%"}}>
+        <DishSearch/>
+        <section className="dish">
+            <DishModal/>
+            {mealDB.map(meal=>{
+                return <Dish key={meal.idMeal} dish={meal}/>
+            })}
+            <button onClick={()=>{
+                updateCount(mealCount+9);
+            }}>Load more</button>
+        </section>
+    </section>)
 }
