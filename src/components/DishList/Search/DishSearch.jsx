@@ -1,9 +1,13 @@
+import { Autocomplete } from "@mui/joy";
 import { useState } from "react"
 
 export default function DishSearch(){
     const [inputValue,updateInput] = useState("");
     
-    return <section>
-        <input type="text" value={inputValue} onInput={(e)=>{updateInput(e.target.value)}} />
-    </section>
+    return <section>    
+        
+            <Autocomplete  
+                options={["Asdasd"]}
+                placeholder="Filter by main ingredient"/>
+        </section>
 }
