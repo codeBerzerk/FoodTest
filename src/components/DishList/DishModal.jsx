@@ -15,7 +15,7 @@ const style = {
     transform: 'translate(-55%, -50%)',
     width: '62%',
     height: 'auto',
-    p: 4,
+    padding: '14px',
 }
 
 const receiptStyles = {
@@ -47,12 +47,18 @@ export default function DishModal(){
                 open={dish.isOpen}
                 onClose={()=>openModal(false)}>
                 <Box sx={style}>
-                    <Typography variant='h4'>{dish.meal.strMeal}</Typography>
-                    <Stack direction="row" spacing={1} sx={{maxWidth:"100%",flexWrap:"wrap",alignItems:'center',}}>
-                        {ingredients.map(ingr=>{
-                            return <ModalChip key={ingr} ingr={ingr}/>
-                        })}
-                    </Stack>
+
+                    <Box className="modalTitleContainer">
+                        <Box className="modalImg" sx={{backgroundImage:`url(${dish.meal.strMealThumb})`}}/>
+                            <Box className="modalDescriptionContainer">
+                                <Typography className="modalTitle">{dish.meal.strMeal}</Typography>
+                                <Stack direction="row" spacing={1} sx={{maxWidth:"100%",flexWrap:"wrap",alignItems:'center',}}>
+                                    {ingredients.map(ingr=>{
+                                        return <ModalChip key={ingr} ingr={ingr}/>
+                                    })}
+                                </Stack>
+                            </Box>
+                    </Box>
                     <Typography className="modalReceipt" variant='subtitle1' sx={receiptStyles}>{dish.meal.strInstructions}</Typography>
                 </Box>
             </Modal>)
