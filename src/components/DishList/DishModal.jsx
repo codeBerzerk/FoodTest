@@ -7,7 +7,6 @@ import ModalChip from './ModalChip';
 
 const style = {
     background: 'linear-gradient(180deg,  #f1a533 0%, rgba(226, 140, 9, 0.7) 100%)',
-    backdropFilter: 'blur(12.5px)',
     borderRadius: '38px',
     position: 'absolute',
     top: '50%',

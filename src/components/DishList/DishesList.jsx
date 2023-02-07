@@ -54,7 +54,6 @@ export default function DishesList() {
         </section>
             <Button
                 style={{
-
                     fontFamily: ' "Montserrat", sans-serif ',
                     border: "none",
                     marginTop: '60px',
@@ -72,7 +71,7 @@ export default function DishesList() {
                     color: 'rgba(171, 39, 63, 0.7)',
                 }}
                 onClick={()=>{
-                updateCount((prevState)=>prevState+9);
+                updateCount((prevState)=>prevState+12);
             }}>Load more</Button>
 
     </section>)
