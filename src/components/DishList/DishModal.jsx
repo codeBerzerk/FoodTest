@@ -65,8 +65,8 @@ export default function DishModal(){
                         })}
                     </Stack>
                     <Typography sx={{fontSize:"28px",margin:"10px 0"}}>Links</Typography>
-                    <Typography sx={{fontStyle:"italic"}}> <a href={dish.meal.strSource} target="_blank">BBC Article</a></Typography>
-                    <Typography sx={{fontStyle:"italic",marginTop:"5px"}}> <a href={dish.meal.strYoutube} target="_blank">YouTube Video Tutorial</a></Typography>
+                    <Typography sx={{fontStyle:"italic"}}> <a rel="noreferrer" href={dish.meal.strSource} target="_blank">BBC Article</a></Typography>
+                    <Typography sx={{fontStyle:"italic",marginTop:"5px"}}> <a rel="noreferrer" href={dish.meal.strYoutube} target="_blank">YouTube Video Tutorial</a></Typography>
                     </Box>
                 </Box>
             </Modal>)
