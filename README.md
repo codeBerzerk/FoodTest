@@ -29,6 +29,7 @@ products;
 - Redux
 - SCSS
 - Mui
+- npm
 - Figma
 
 ## How to start:
