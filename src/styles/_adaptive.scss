@@ -83,23 +83,41 @@ $large: 1024px;
   }
 }
 
+.modalContainer {
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    padding-top: 8px !important;
+    left: 55%!important;
+    width: 90%!important;
+
+  }
+}
 
 .ingredientsChip {
+  @media screen and (min-width: $medium) and (max-width: $large) {
 
+  }
 }
 
 .modalImg {
+  @media screen and (min-width: $medium) and (max-width: $large) {
 
+  }
 }
 
 .modalTitleContainer {
+  @media screen and (min-width: $medium) and (max-width: $large) {
 
+  }
 }
 
 .modalTitle {
-
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    text-align: center;
+  }
 }
 
 .modalDescriptionContainer {
+  @media screen and (min-width: $medium) and (max-width: $large) {
 
+  }
 }

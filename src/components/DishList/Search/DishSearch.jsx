@@ -44,7 +44,7 @@ export default function DishSearch(){
                     fontSize: "16px",
                     lineHeight: "20px",
                     color: "rgba(63, 43, 12, 0.7)",
-                    width: "482px",
+                    width: "32vw",
                     height: "55px",
                     background: "#FFEDD1",
                     boxShadow: "0 11px 15px rgba(235, 169, 70, 0.64)",

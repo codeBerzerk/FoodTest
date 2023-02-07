@@ -66,7 +66,7 @@ export default function DishesList() {
                     fontStyle: 'normal',
                     textDecoration: 'underline',
                     fontWeight: 500,
-                    fontSize: '1.5625vw',
+                    fontSize: '1em',
                     lineHeight: '29px',
                     color: 'rgba(171, 39, 63, 0.7)',
                 }}

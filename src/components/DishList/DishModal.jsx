@@ -40,8 +40,7 @@ export default function DishModal(){
     return (<Modal
                 open={dish.isOpen}
                 onClose={()=>openModal(false)}>
-                <Box sx={style}>
-
+                <Box className="modalContainer" sx={style}>
                     <Box className="modalTitleContainer">
                         <Box className="modalImg" sx={{backgroundImage:`url(${dish.meal.strMealThumb})`}}/>
                             <Box className="modalDescriptionContainer">
