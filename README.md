@@ -40,7 +40,7 @@ Clone the repository
 In the project directory, you can execute such scripts:
 
 ### `npm install`
-To add all used packages.\
+To add all used packages.
 
 ### `npm start`
 
