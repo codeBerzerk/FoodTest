@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 export default function SortCart({cart,isCategoryVisible,removeProduct}){
     return (
         <Stack direction={"row"}
+                className="stack"
                sx={{
                    minWidth:"100%",
                    maxHeight:"600px",
@@ -17,6 +18,7 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
              {!isCategoryVisible ? 
                      cart.products?.map((product,index)=>{
                          return <Chip
+                            onClick={()=>{removeProduct(product)}}
                              sx={{
                                  fontFamily: "'Montserrat', sans-serif",
                                  fontStyle: 'italic',
@@ -40,6 +42,7 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
                                      <Stack sx={{flexWrap:"wrap"}} direction="row"> 
                                      {cartHandlers[1](cart.products,category).map((product,index)=>{ 
                                              return <Chip
+                                                        onClick={()=>{removeProduct(product)}}
                                                          sx={{
                                                              fontFamily: "'Montserrat', sans-serif",
                                                              fontStyle: 'italic',

@@ -9,7 +9,15 @@ export default function ModalChip({ingr}){
     const cart = useSelector(state=>state.cart);
     const [isAdded,updateAdded] = useState(cart.products?.find(product=>product.label === ingr));
 
-    return (<Chip className="ingredientsChip" label={ingr} variant={isAdded? "outlined":"filled"} deleteIcon={isAdded?"":<CiCirclePlus/>} onDelete={()=>{
+    return (<Chip className="ingredientsChip" label={ingr} variant={isAdded? "outlined":"filled"} deleteIcon={isAdded?"":<CiCirclePlus/>} onClick={()=>{
+        if(isAdded){
+            dispatch({type:"REMOVE_PRODUCT",payload:cartHandlers[2](ingr)})
+        }else{
+            dispatch({type:"ADD_PRODUCT",payload:cartHandlers[2](ingr)})
+        }
+        updateAdded(!isAdded); 
+    }} 
+    onDelete={()=>{
         if(isAdded){
             dispatch({type:"REMOVE_PRODUCT",payload:cartHandlers[2](ingr)})
         }else{

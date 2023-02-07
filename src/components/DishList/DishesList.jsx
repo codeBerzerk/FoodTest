@@ -5,11 +5,16 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { useEffect, useState } from "react"
 import DishModal from "./DishModal";
 import DishSearch from "./Search/DishSearch";
-import {Button} from "@mui/material";
+import {Button, Modal} from "@mui/material";
+import {AiOutlineShoppingCart} from "react-icons/ai"
+import { Box } from "@mui/system";
+import CartMenu from "../Cart/CartMenu";
 
 export default function DishesList() {
     const [mealDB,updateDB] = useState([]);
     const [mealCount,updateCount] = useState(12);
+    const [isModalOpen,setModalOpen] = useState(false);
+
     useEffect(()=>{
         let arr = [];
         if(mealDB.length!==0){
@@ -30,14 +35,25 @@ export default function DishesList() {
 
     if(!mealDB.length){
         return <Backdrop
-        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        sx={{ color: '#EBA944', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={!mealDB.length}
       >
         <CircularProgress color="inherit" />
       </Backdrop>
     }
+
+    
     return(<section className="dish__container">
-            <DishSearch/>
+        <div className="openMenu" onClick={()=>{setModalOpen(true)}}><AiOutlineShoppingCart/></div>
+        <Modal
+            open={isModalOpen}
+            onClose={()=>setModalOpen(false)}>
+            <Box className="cartModalContainer">
+                <CartMenu close={setModalOpen}/>
+            </Box>
+        </Modal>
+        
+        <DishSearch/>
         <section className="dish">
             <DishModal/>
             {mealDB.map(meal=>{

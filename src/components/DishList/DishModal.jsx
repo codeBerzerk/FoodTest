@@ -7,10 +7,9 @@ import ModalChip from './ModalChip';
 
 const style = {
     background: '#fbae3c',
-    borderRadius: '20px',
     position: 'absolute',
     top: '50%',
-    left: '65%',
+    left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '70%',
     height: 'auto',
