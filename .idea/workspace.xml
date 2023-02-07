@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="delete blur">
+    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="dish adaptived for tablets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/DishModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DishList/DishesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/DishesList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DishList/Search/DishSearch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/Search/DishSearch.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_adaptive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_adaptive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,8 @@
       <workItem from="1675665689781" duration="10801000" />
       <workItem from="1675677432007" duration="6537000" />
       <workItem from="1675707455120" duration="1492000" />
-      <workItem from="1675751878686" duration="14961000" />
+      <workItem from="1675751878686" duration="15778000" />
+      <workItem from="1675772798875" duration="1252000" />
     </task>
     <task id="LOCAL-00001" summary="gg">
       <created>1675456319475</created>
@@ -302,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675767815127</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="dish adaptived for tablets">
+      <created>1675772152305</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1675772152305</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +367,7 @@
     <MESSAGE value="button load more styled" />
     <MESSAGE value="started make adaptive" />
     <MESSAGE value="delete blur" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete blur" />
+    <MESSAGE value="dish adaptived for tablets" />
+    <option name="LAST_COMMIT_MESSAGE" value="dish adaptived for tablets" />
   </component>
 </project>

@@ -1,88 +1,95 @@
 $small: 300px;
 $medium: 640px;
+$large: 1024px;
 
-.cart{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    min-height: 100vh;
-    padding: 30px;
-    background: #FFE4BC;
+.cart {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        min-height: 100vh;
+        padding: 30px;
+        background: #FFE4BC;
 
-    &__wrapper{
-        top: 20px;
-        position: sticky;
-    }
-    
-    &__input{
-        font-family: "Roboto",sans-serif;
-    }
-    &__welcome{
-    text-align: center;
-    font-family: 'Neonderthaw', sans-serif !important;
-    }
- 
-    &__myProducts {
-    font-family: 'Montserrat Alternates', sans-serif !important;
-    }
- 
-    &__sortBy {
-    font-family: 'Montserrat', sans-serif !important;
-    }
+        &__wrapper {
+            top: 20px;
+            position: sticky;
+        }
 
-    &__switch {
-        margin-left: 80px;
-    }
-}
-.cart__switch input:checked + span{
-        color: #AB273F !important;
-}
+        &__input {
+            font-family: "Roboto", sans-serif;
+        }
+        &__welcome {
+            text-align: center;
+            font-family: 'Neonderthaw', sans-serif !important;
+        }
 
+        &__myProducts {
+            font-family: 'Montserrat Alternates', sans-serif !important;
+        }
 
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
-    color: #AB273F !important;
-}
+        &__sortBy {
+            font-family: 'Montserrat', sans-serif !important;
+        }
 
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
-    background: #FFF1DC!important;
-    box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
-    border-radius: 30%;
-}
-
-.css-1dbv9iw-MuiStack-root {
-    margin: 26px;
-}
-
-.cart__switch::-webkit-slider-runnable-track {
-    width: 51px;
-    height: 24px;
-    left: 345px;
-    top: 225px;
-    background: #FFF1DC;
-    box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
-    border-radius: 33.5px;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.cart__button {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-ul.MuiAutocomplete-listbox{
-    font-family: "Roboto",sans-serif;
-    z-index: 10000;
-    background-color: #ffe4bc;
-    border:none;
-    & li{
-        border-bottom: 1px solid #ab273f;
-        &:hover{
-            background-color: #EBA944;
+        &__switch {
+            margin-left: 80px;
         }
     }
-}
-.MuiAutocomplete-clearIndicator{
-    display: none !important;
-}
-.MuiChip-outlined{
-    margin: 3px !important;
-}
+
+    .cart__switch input:checked + span {
+        color: #AB273F !important;
+    }
+
+
+    .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+        color: #AB273F !important;
+    }
+
+    .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+        background: #FFF1DC !important;
+        box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
+        border-radius: 30%;
+    }
+
+    .css-1dbv9iw-MuiStack-root {
+        margin: 26px;
+    }
+
+    .cart__switch::-webkit-slider-runnable-track {
+        width: 51px;
+        height: 24px;
+        left: 345px;
+        top: 225px;
+        background: #FFF1DC;
+        box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
+        border-radius: 33.5px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    .cart__button {
+        font-family: 'Montserrat', sans-serif !important;
+    }
+
+    ul.MuiAutocomplete-listbox {
+        font-family: "Roboto", sans-serif;
+        z-index: 10000;
+        background-color: #ffe4bc;
+        border: none;
+
+        & li {
+            border-bottom: 1px solid #ab273f;
+
+            &:hover {
+                background-color: #EBA944;
+            }
+        }
+    }
+
+    .MuiAutocomplete-clearIndicator {
+        display: none !important;
+    }
+
+    .MuiChip-outlined {
+        margin: 3px !important;
+    }
+

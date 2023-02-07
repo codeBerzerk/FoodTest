@@ -4,6 +4,137 @@ $large: 1024px;
 
 /////////////////////TABLETS///////////////////////
 
+.cart {
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 100vh;
+    padding: 30px;
+    background: #FFE4BC;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      top: 20px;
+      position: sticky;
+    }
+  }
+
+  &__input {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      font-family: "Roboto", sans-serif;
+    }
+  }
+
+  &__welcome {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      text-align: center;
+      font-family: 'Neonderthaw', sans-serif !important;
+    }
+  }
+
+  &__myProducts {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      font-family: 'Montserrat Alternates', sans-serif !important;
+      font-size: 1.5em !important;
+    }
+  }
+
+  &__sortBy {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      font-family: 'Montserrat', sans-serif !important;
+    }
+  }
+
+  &__switch {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      margin-left: 80px;
+    }
+  }
+}
+
+  .cart__switch input:checked + span {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      color: #AB273F !important;
+    }
+  }
+
+
+  .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      color: #AB273F !important;
+    }
+  }
+
+  .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      background: #FFF1DC !important;
+      box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
+      border-radius: 30%;
+    }
+  }
+
+  .css-1dbv9iw-MuiStack-root {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      margin: 26px;
+    }
+  }
+
+  .cart__switch::-webkit-slider-runnable-track {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      width: 51px;
+      height: 24px;
+      left: 345px;
+      top: 225px;
+      background: #FFF1DC;
+      box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
+      border-radius: 33.5px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+  }
+
+  .cart__button {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: 1em!important;
+    }
+  }
+
+  ul.MuiAutocomplete-listbox {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      font-family: "Roboto", sans-serif;
+      z-index: 10000;
+      background-color: #ffe4bc;
+      border: none;
+    }
+    & li {
+      @media screen and (min-width: $medium) and (max-width: $large) {
+        border-bottom: 1px solid #ab273f;
+      }
+      &:hover {
+        @media screen and (min-width: $medium) and (max-width: $large) {
+          background-color: #EBA944;
+        }
+      }
+    }
+  }
+
+  .MuiAutocomplete-clearIndicator {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      display: none !important;
+    }
+  }
+
+  .MuiChip-outlined {
+    @media screen and (min-width: $medium) and (max-width: $large) {
+      margin: 3px !important;
+    }
+  }
+
+
+
+
 .dish {
   @media screen and (min-width: $small) and (max-width: $medium) {
     grid-template-columns: 1fr;
@@ -88,7 +219,6 @@ $large: 1024px;
     padding-top: 8px !important;
     left: 55%!important;
     width: 90%!important;
-
   }
 }
 

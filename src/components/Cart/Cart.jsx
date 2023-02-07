@@ -98,7 +98,6 @@ export default function Cart() {
             <Button
                 className='cart__button'
                 sx={{
-                    position:"absolute",
                     bottom:"20px",
                     marginTop: '60px',
                     width: '80%',
