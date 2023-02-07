@@ -5,10 +5,12 @@ $large: 1024px;
 .dish {
   @media screen and (min-width: $small) and (max-width: $medium) {
     grid-template-columns: 1fr;
+    display: grid;
   }
 
   @media screen and (min-width: $medium) and (max-width: $large) {
     grid-template-columns: 1fr 1fr;
+    display: grid;
   }
 
   @media screen and (min-width: $large) {
@@ -93,7 +95,7 @@ $large: 1024px;
         font-size: 16px;
         line-height: 20px;
         color: #3F2B0C;
-        width: 300px;
+        width: 19.53125vw;
         height: 150px;
         background: #FFEDD1;
         box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
@@ -103,7 +105,7 @@ $large: 1024px;
 
     &--title {
       text-align: center;
-      width: 250px;
+      width: 16.276041666666668vw;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;

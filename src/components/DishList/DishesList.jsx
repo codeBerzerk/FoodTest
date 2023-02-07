@@ -9,7 +9,7 @@ import {Button} from "@mui/material";
 
 export default function DishesList() {
     const [mealDB,updateDB] = useState([]);
-    const [mealCount,updateCount] = useState(9);
+    const [mealCount,updateCount] = useState(12);
     useEffect(()=>{
         let arr = [];
         if(mealDB.length!==0){
