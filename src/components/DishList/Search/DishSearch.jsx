@@ -35,6 +35,8 @@ export default function DishSearch(){
                 sx={{
                     marginTop: '30px',
                     marginBottom: '30px',
+                    marginLeft: "auto",
+                    marginRight: "auto",
                     border: "none",
                     fontFamily: "'Montserrat', sans-serif",
                     fontStyle: "italic",
