@@ -1,3 +1,54 @@
+@media (max-width:1200px){
+  .modalContainer{
+    left: 50% !important;
+    width: 95% !important;
+  }
+  .closeBtn{
+    display: block !important; 
+  }
+}
 @media (max-width:840px){
-  
+  .cart{
+    display: none !important;
+  }
+  .separator{
+    margin-top: 10px;
+    width: 450px;
+    border-radius: 5px;
+    height: 3px;
+    background-color: #AB273F;
+  }
+  .welcome{
+    display: block !important;
+  }
+  .modalContainer{
+    justify-content: flex-start !important;
+    overflow-y: scroll;
+    max-height: 90vh;
+  }
+  .modalTitleContainer {
+    flex-direction: column;
+    & .modalImg {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  }
+  .modalDescriptionContainer {
+    width: 80% !important;
+  }
+}
+.modalTitleContainer{
+  margin: 20px;
+}
+.closeBtn{
+  position: absolute;
+  background-color: #FFEDD1;
+  border-radius: 10px;  
+  left: 50%;
+  transform: translate(-50%,50%);
+  display: none;
+  margin-bottom: 20px;
+  font-family: "Montserrat",sans-serif;
+  padding: 10px 50px;
 }

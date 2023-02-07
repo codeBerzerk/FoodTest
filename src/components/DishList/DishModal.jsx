@@ -6,26 +6,25 @@ import { dishHandler } from './DishHandlers';
 import ModalChip from './ModalChip';
 
 const style = {
-    background: 'linear-gradient(180deg,  #f1a533 0%, rgba(226, 140, 9, 0.7) 100%)',
-    borderRadius: '38px',
+    background: '#fbae3c',
+    borderRadius: '20px',
     position: 'absolute',
     top: '50%',
     left: '65%',
-    transform: 'translate(-55%, -50%)',
-    width: '62%',
+    transform: 'translate(-50%, -50%)',
+    width: '70%',
     height: 'auto',
     padding: '14px',
 }
 
 const receiptStyles = {
     outline:"none",
-    maxHeight: "50vh",
+    maxHeight: "35vh",
     marginTop: "26px",
+    marginBottom:"10px",
     padding: "20px 40px 40px 40px",
     overflowY:"scroll",
     background: '#FFEDD1',
-    boxShadow: '0 11px 15px rgba(235, 169, 70, 0.64)',
-    borderRadius: '33.5px',
     fontFamily: ' "Montserrat", sans-serif ',
   };
 
@@ -54,7 +53,7 @@ export default function DishModal(){
                                 <Typography className="modalBadge" style={{left:"20px"}}>{dish.meal.strArea}</Typography>
                             </Box>
                     </Box>
-                    <Box sx={receiptStyles}>
+                    <Box sx={receiptStyles} className="modal__content">
                     <Typography sx={{fontSize:"28px",marginBottom:"10px"}}>Recipe</Typography>
                     <Typography className="modalReceipt" variant='subtitle1'>{dish.meal.strInstructions}</Typography>
                     <Typography sx={{fontSize:"28px",margin:"10px 0"}}>Ingredients & Measure</Typography>
@@ -67,6 +66,7 @@ export default function DishModal(){
                     <Typography sx={{fontStyle:"italic"}}> <a rel="noreferrer" href={dish.meal.strSource} target="_blank">BBC Article</a></Typography>
                     <Typography sx={{fontStyle:"italic",marginTop:"5px"}}> <a rel="noreferrer" href={dish.meal.strYoutube} target="_blank">YouTube Video Tutorial</a></Typography>
                     </Box>
+                    <div className='closeBtn' onClick={()=>{openModal(false)}}>Close</div>
                 </Box>
             </Modal>)
 }

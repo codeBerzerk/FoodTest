@@ -36,22 +36,15 @@ export default function DishesList() {
         <CircularProgress color="inherit" />
       </Backdrop>
     }
-    return(<section style={{
-        display:"flex",
-        flexDirection:"column",
-        alignItems:"center",
-        justifyContent:"center",
-        width:"78%",
-        background:
-            "linear-gradient(120.12deg, rgba(255, 247, 236, 0.75) -0.11%, rgba(255, 247, 236, 0) 99.44%)"
-    }}>
-        <DishSearch/>
+    return(<section className="dish__container">
+            <DishSearch/>
         <section className="dish">
             <DishModal/>
             {mealDB.map(meal=>{
                 return <Dish key={meal.idMeal} dish={meal}/>
             })}
         </section>
+        <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
             <Button
                 style={{
                     fontFamily: ' "Montserrat", sans-serif ',
@@ -70,6 +63,6 @@ export default function DishesList() {
                 onClick={()=>{
                 updateCount((prevState)=>prevState+12);
             }}>Load more</Button>
-
+        </div>
     </section>)
 }

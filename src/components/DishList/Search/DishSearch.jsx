@@ -1,4 +1,5 @@
 import { Autocomplete } from "@mui/joy";
+import { Typography } from "@mui/material";
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 
@@ -27,16 +28,27 @@ export default function DishSearch(){
         dispatch({type:"CHANGE_OPEN",payload:state})
     }
     
-    return <section>    
-        
+    return <div style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
+                <Typography
+                className="cart__welcome welcome"
+                sx={{
+                    userSelect:'none',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '64px',
+                    lineHeight: '86px',
+                    color: '#E28C09',
+                }}
+            >Welcome</Typography>
+            <div className="separator">
+
+            </div>
             <Autocomplete  
                 placeholder="Назва страви"
                 options={dishList}
                 sx={{
-                    marginTop: '30px',
-                    marginBottom: '30px',
-                    marginLeft: "auto",
-                    marginRight: "auto",
+                    margin: '30px',
+                    minWidth:"400px",
                     border: "none",
                     fontFamily: "'Montserrat', sans-serif",
                     fontStyle: "italic",
@@ -44,7 +56,6 @@ export default function DishSearch(){
                     fontSize: "16px",
                     lineHeight: "20px",
                     color: "rgba(63, 43, 12, 0.7)",
-                    width: "32vw",
                     height: "55px",
                     background: "#FFEDD1",
                     boxShadow: "0 11px 15px rgba(235, 169, 70, 0.64)",
@@ -62,5 +73,5 @@ export default function DishSearch(){
                     openModal(true);
                 }}/>
 
-        </section>
+        </div>
 }

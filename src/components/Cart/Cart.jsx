@@ -85,6 +85,7 @@ export default function Cart() {
                 changeSortState(!isCategoryVisible)}}/>
         </Stack>
         <Stack
+        className="sorted__products"
         sx={{
             position:"relative",
             alignItems: 'center',
@@ -92,7 +93,6 @@ export default function Cart() {
             paddingBottom: '26px',
             width: '99%',
             background: 'rgba(255, 237, 209, 0.77)',
-            borderRadius: '24px',
         }}
         >
             <SortCart cart={cart} removeProduct={removeProduct} isCategoryVisible={isCategoryVisible}/>

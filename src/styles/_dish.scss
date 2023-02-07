@@ -18,6 +18,9 @@ $large: 1024px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &--products{
+        list-style-type: disc;
+      }
     &--img {
         width: 250px;
         height: 250px;
@@ -79,6 +82,11 @@ $large: 1024px;
     width: 200px;
     height: 200px;
 }
+.modal__content{
+  border-radius: 5px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
 
 .modalTitleContainer {
     display: flex;
@@ -106,4 +114,7 @@ $large: 1024px;
   position: absolute;
   color: #3F2B0C;
   top: 10px;
+}
+.welcome{
+  display: none;
 }
