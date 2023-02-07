@@ -3,9 +3,10 @@ $medium: 640px;
 $large: 1024px;
 
 .cart {
+        min-width: 300px;
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 22%;
         min-height: 100vh;
         padding: 30px;
         background: #FFE4BC;
@@ -29,10 +30,6 @@ $large: 1024px;
 
         &__sortBy {
             font-family: 'Montserrat', sans-serif !important;
-        }
-
-        &__switch {
-            margin-left: 80px;
         }
     }
 

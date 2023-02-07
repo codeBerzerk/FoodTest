@@ -41,7 +41,7 @@ export default function DishesList() {
         flexDirection:"column",
         alignItems:"center",
         justifyContent:"center",
-        width:"70%",
+        width:"78%",
         background:
             "linear-gradient(120.12deg, rgba(255, 247, 236, 0.75) -0.11%, rgba(255, 247, 236, 0) 99.44%)"
     }}>
@@ -58,16 +58,13 @@ export default function DishesList() {
                     border: "none",
                     marginTop: '60px',
                     marginBottom: '60px',
-                    width: '30%',
-                    height: '66px',
                     background: '#FFF1DC',
                     boxShadow: '0 11px 15px rgba(235, 169, 70, 0.64)',
-                    borderRadius: '33.5px',
                     fontStyle: 'normal',
+                    borderRadius:"30px",
                     textDecoration: 'underline',
                     fontWeight: 500,
-                    fontSize: '1em',
-                    lineHeight: '29px',
+                    padding:"10px 50px",
                     color: 'rgba(171, 39, 63, 0.7)',
                 }}
                 onClick={()=>{

@@ -3,59 +3,49 @@ $medium: 640px;
 $large: 1024px;
 
 .dish {
-  @media screen and (min-width: $large) {
     background: linear-gradient(120.12deg, rgba(255, 247, 236, 0.75) -0.11%, rgba(255, 247, 236, 0) 99.44%);
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  &__meal {
-    @media screen and (min-width: $large) {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    &__meal {
       margin-top: 50px;
       height: 330px;
+      margin: 40px;
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    }
-
     &--img {
-      @media screen and (min-width: $large) {
         width: 250px;
         height: 250px;
         background-size: contain;
         border-radius: 50%;
         background-position: center;
       }
-    }
 
     &--description {
-      @media screen and (min-width: $large) {
         cursor: pointer;
+        padding: 0px 40px 15px 40px;
         margin-top: -50px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         font-family: 'Montserrat', sans-serif;
         font-style: italic;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
         color: #3F2B0C;
-        width: 19.53125vw;
-        height: 150px;
         background: #FFEDD1;
         box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
         border-radius: 34px;
-      }
     }
 
     &--title {
-      @media screen and (min-width: $large) {
         text-align: center;
-        width: 16.276041666666668vw;
+        width: 250px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -64,14 +54,13 @@ $large: 1024px;
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 6px;
+
       }
     }
   }
-}
 
 .ingredientsChip {
-  @media screen and (min-width: $large) {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 16px;
@@ -81,46 +70,37 @@ $large: 1024px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
     border-radius: 20px;
     margin: 4px !important;
-  }
 }
 
 .modalImg {
-  @media screen and (min-width: $large) {
     background-size: contain;
     border-radius: 50%;
     background-position: center;
     width: 200px;
     height: 200px;
-  }
 }
 
 .modalTitleContainer {
-  @media screen and (min-width: $large) {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-}
 
 .modalTitle {
-  @media screen and (min-width: $large) {
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
     font-weight: 500;
     font-size: 24px !important;
     line-height: 29px;
     color: #3F2B0C;
-  }
 }
 
 .modalDescriptionContainer {
-  @media screen and (min-width: $large) {
     padding: 24px 60px;
     width: 50%;
     background: #FFEDD1;
     box-shadow: 0 11px 15px rgba(235, 169, 70, 0.64);
     border-radius: 33.5px;
-  }
 }
 .modalBadge{
   position: absolute;

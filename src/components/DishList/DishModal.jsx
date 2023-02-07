@@ -10,7 +10,7 @@ const style = {
     borderRadius: '38px',
     position: 'absolute',
     top: '50%',
-    left: '70%',
+    left: '65%',
     transform: 'translate(-55%, -50%)',
     width: '62%',
     height: 'auto',
