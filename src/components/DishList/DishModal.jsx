@@ -62,7 +62,7 @@ export default function DishModal(){
                     <Typography sx={{fontSize:"28px",margin:"10px 0"}}>Ingredients & Measure</Typography>
                     <Stack direction={"column"}>
                         {ingredients.map((ingr,ind)=>{
-                            return <Typography sx={{fontStyle:"italic"}}>{ingr} - {dish.meal["strMeasure"+(ind+1)]};</Typography>
+                            return <Typography key={ingr} sx={{fontStyle:"italic"}}>{ingr} - {dish.meal["strMeasure"+(ind+1)]};</Typography>
                         })}
                     </Stack>
                     <Typography sx={{fontSize:"28px",margin:"10px 0"}}>Links</Typography>
