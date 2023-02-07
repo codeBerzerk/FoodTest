@@ -9,15 +9,17 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 800,
-    bgcolor: '#ffffff',
-    border: '2px solid #000',
+    borderRadius:"25px",
+    bgcolor: '#FFE4BC',
     boxShadow: 24,
     p: 4,
   };
 
 export default function CartModal({isOpen,updateOpen,cart,addProduct,removeProduct,isCategoryVisible}){
     return (
-        <Modal open={isOpen} onClose={()=>{updateOpen(false)}}>
+        <Modal 
+            open={isOpen}
+            onClose={()=>{updateOpen(false)}}>
             <Box sx={style}>
                 <CartAutocomplete addProduct={addProduct} cart={cart}/>
                 <SortCart cart={cart} removeProduct={removeProduct} isCategoryVisible={isCategoryVisible}/>

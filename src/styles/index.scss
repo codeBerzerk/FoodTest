@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,500;1,300;1,500&display=swap');
+
 @import "reset.css";
 @import "cart";
 @import "adaptive";
 @import "dish";
 
+
 #root{
+    background-color:#fff8ef;
     display: flex;
+    position: relative;
+    outline: none !important;
 }
 
 * {

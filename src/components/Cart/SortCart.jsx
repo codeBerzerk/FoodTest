@@ -6,10 +6,13 @@ import Typography from '@mui/material/Typography';
 
 export default function SortCart({cart,isCategoryVisible,removeProduct}){
     return (
-        <Stack
+        <Stack direction={"row"}
                sx={{
+                   minWidth:"80%",
+                   maxHeight:"600px",
+                   overflowY:"scroll",
                    flexWrap:"wrap",
-                   display: 'flex',
+                   display: "flex",
                     }}>
              {!isCategoryVisible ? 
                      cart.products?.map((product,index)=>{
@@ -32,7 +35,7 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
                                      onDelete={()=>removeProduct(product)}/> 
                                  }): 
                      cartHandlers[0](cart.products).map((category,ind)=>{ 
-                         return <section key={ind}> 
+                         return <section key={ind} style={{width:"100%",margin:"10px"}}> 
                                      <Typography variant='h5'>{category}</Typography> 
                                      <Stack sx={{flexWrap:"wrap"}} direction="row"> 
                                      {cartHandlers[1](cart.products,category).map((product,index)=>{ 

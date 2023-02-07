@@ -32,6 +32,7 @@ export default function Cart() {
     }
 
     return(<section className="cart">
+            <div className="cart__wrapper">
             <CartModal 
                 isOpen={isOpen} updateOpen={updateOpen}
                 addProduct={addProduct} cart={cart}
@@ -83,9 +84,10 @@ export default function Cart() {
         </Stack>
         <Stack
         sx={{
+            minHeight:'75vh',
+            position:"relative",
             alignItems: 'center',
-            position: 'sticky',
-            top: '10px',
+            top: '10px',            
             paddingBottom: '26px',
             width: '99%',
             background: 'rgba(255, 237, 209, 0.77)',
@@ -96,6 +98,8 @@ export default function Cart() {
             <Button
                 className='cart__button'
                 sx={{
+                    position:"absolute",
+                    bottom:"20px",
                     marginTop: '60px',
                     width: '80%',
                     height: '66px',
@@ -105,7 +109,7 @@ export default function Cart() {
                     fontStyle: 'normal',
                     textDecoration: 'underline',
                     fontWeight: 500,
-                    fontSize: '1.5625vw',
+                    fontSize: '28px',
                     lineHeight: '29px',
                     color: 'rgba(171, 39, 63, 0.7)',
                 }}
@@ -114,6 +118,6 @@ export default function Cart() {
                 Додати продукти
             </Button>
         </Stack>
-
+        </div>
         </section>)
 }
