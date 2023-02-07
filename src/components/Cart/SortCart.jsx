@@ -8,7 +8,7 @@ export default function SortCart({cart,isCategoryVisible,removeProduct}){
     return (
         <Stack direction={"row"}
                sx={{
-                   minWidth:"80%",
+                   minWidth:"100%",
                    maxHeight:"600px",
                    overflowY:"scroll",
                    flexWrap:"wrap",

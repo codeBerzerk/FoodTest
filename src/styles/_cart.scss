@@ -31,9 +31,14 @@ $medium: 640px;
     }
 
     &__switch {
-    margin-left: 80px;
+        margin-left: 80px;
     }
 }
+.cart__switch input:checked + span{
+        color: #AB273F !important;
+}
+
+
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
     color: #AB273F !important;
 }
