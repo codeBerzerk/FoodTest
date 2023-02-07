@@ -60,12 +60,12 @@ export default function DishModal(){
                     <Typography sx={{fontSize:"28px",margin:"10px 0"}}>Ingredients & Measure</Typography>
                     <Stack direction={"column"}>
                         {ingredients.map((ingr,ind)=>{
-                            return <Typography sx={{fontStyle:"italic"}}>{ingr} - {dish.meal["strMeasure"+(ind+1)]};</Typography>
+                            return <Typography key={ingr} sx={{fontStyle:"italic"}}>{ingr} - {dish.meal["strMeasure"+(ind+1)]};</Typography>
                         })}
                     </Stack>
                     <Typography sx={{fontSize:"28px",margin:"10px 0"}}>Links</Typography>
-                    <Typography sx={{fontStyle:"italic"}}> <a href={dish.meal.strSource} target="_blank">BBC Article</a></Typography>
-                    <Typography sx={{fontStyle:"italic",marginTop:"5px"}}> <a href={dish.meal.strYoutube} target="_blank">YouTube Video Tutorial</a></Typography>
+                    <Typography sx={{fontStyle:"italic"}}> <a rel="noreferrer" href={dish.meal.strSource} target="_blank">BBC Article</a></Typography>
+                    <Typography sx={{fontStyle:"italic",marginTop:"5px"}}> <a rel="noreferrer" href={dish.meal.strYoutube} target="_blank">YouTube Video Tutorial</a></Typography>
                     </Box>
                 </Box>
             </Modal>)
