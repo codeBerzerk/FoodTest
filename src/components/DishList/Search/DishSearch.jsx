@@ -33,6 +33,8 @@ export default function DishSearch(){
                 placeholder="Назва страви"
                 options={dishList}
                 sx={{
+                    marginTop: '30px',
+                    marginBottom: '30px',
                     border: "none",
                     fontFamily: "'Montserrat', sans-serif",
                     fontStyle: "italic",

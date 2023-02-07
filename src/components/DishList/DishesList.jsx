@@ -36,7 +36,15 @@ export default function DishesList() {
         <CircularProgress color="inherit" />
       </Backdrop>
     }
-    return(<section style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",width:"70%"}}>
+    return(<section style={{
+        display:"flex",
+        flexDirection:"column",
+        alignItems:"center",
+        justifyContent:"center",
+        width:"70%",
+        background:
+            "linear-gradient(120.12deg, rgba(255, 247, 236, 0.75) -0.11%, rgba(255, 247, 236, 0) 99.44%)"
+    }}>
         <DishSearch/>
         <section className="dish">
             <DishModal/>

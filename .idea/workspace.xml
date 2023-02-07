@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="search styles">
+    <list default="true" id="6a02a5a2-d8a2-48a6-91f0-cdd92aa5317b" name="Changes" comment="button load more styled">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DishList/DishesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/DishesList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_cart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_dish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_dish.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DishList/Search/DishSearch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishList/Search/DishSearch.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,8 @@
       <workItem from="1675633269613" duration="864000" />
       <workItem from="1675665689781" duration="10801000" />
       <workItem from="1675677432007" duration="6537000" />
-      <workItem from="1675707455120" duration="699000" />
+      <workItem from="1675707455120" duration="1492000" />
+      <workItem from="1675751878686" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="gg">
       <created>1675456319475</created>
@@ -251,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675691875170</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="button load more styled">
+      <created>1675708353167</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675708353167</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +312,7 @@
     <MESSAGE value="small fix styles" />
     <MESSAGE value="more styleees" />
     <MESSAGE value="search styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="search styles" />
+    <MESSAGE value="button load more styled" />
+    <option name="LAST_COMMIT_MESSAGE" value="button load more styled" />
   </component>
 </project>
