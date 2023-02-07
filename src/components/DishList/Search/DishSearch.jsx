@@ -46,6 +46,7 @@ export default function DishSearch(){
             <Autocomplete  
                 placeholder="Назва страви"
                 options={dishList}
+                className="search"
                 sx={{
                     margin: '30px',
                     minWidth:"400px",

@@ -8,6 +8,9 @@
   }
 }
 @media (max-width:840px){
+  .modalDescriptionContainer {
+    padding: 15px 30px !important;
+  }
   .cart{
     display: none !important;
   }
@@ -46,6 +49,33 @@
   }
   .openMenu{
     display:flex !important;
+  }
+}
+
+@media (max-width:600px){
+  #root{
+    display: block !important;
+  }
+  .separator{
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 5px;
+    height: 3px;
+    background-color: #AB273F;
+  }
+  .search{
+    min-width: 300px !important;
+  }
+  .openMenu{
+    width: 40px !important;
+    height: 40px !important;
+    top: 30px !important;
+  }
+  .dish__meal{
+    margin: 10px;
+  }
+  .cart__input{
+    width: 300px !important;
   }
 }
 .modalTitleContainer{
